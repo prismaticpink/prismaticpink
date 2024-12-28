@@ -1,0 +1,61 @@
+body {
+    background-color: #e1bfd9;
+    background-image: url(background.png);
+}
+
+header {
+    text-align: center;
+    margin: 50px 100px 0px 100px;
+}
+
+h1 {
+    text-transform: lowercase;
+    color: white;
+    text-shadow: #000 1px 0px, #000 -1px 0px, #000 0px 1px, #000 0px -1px;
+    font-family: 'Coming Soon', serif;
+    margin: 0px;
+}
+
+nav {
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #d581c4;
+    margin: 0px 100px -1px 100px;
+    padding: 5px;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+a nav {
+    color: #fff;
+}
+
+#domains {
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #d581c4;
+    margin: 0px 100px 5px 100px;
+    padding: 5px;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    background-color: white;
+    margin: 0px 100px 5px 100px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+footer {
+    text-align: center;
+    text-transform: lowercase;
+    background-color: #d581c4;
+    color: #fff;
+    margin: 0px 100px 100px 100px;
+    padding: 5px;
+    font-family: 'Pixelify Sans';
+    font-size: 10px;
+    border: 1px solid #000;
+}
