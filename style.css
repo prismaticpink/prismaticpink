@@ -24,12 +24,6 @@ header {
     outline: 1px solid #585858;
 }
 
-.rainbow {
-    position: absolute;
-    top: -15px;
-    left: 800px;
-}
-
 h1 {
     text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
     color: #fff;
