@@ -6,25 +6,28 @@
 body {
     background-color: #f5c6e3;
     background-image: url(img/background.png);
-}
-
-#site {
-    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 1000px;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    margin: auto;
-    top: 50%;
 }
 
 header {
     background: linear-gradient(105deg, rgba(255,164,214,1) 10%, rgba(255,201,139,1) 30%, rgba(255,255,159,1) 40%, rgba(214,255,197,1) 50%, rgba(207,255,213,1) 60%, rgba(207,255,238,1) 70%, rgba(207,255,238,1) 80%, rgba(208,220,235,1) 90%, rgba(229,196,224,1) 100%);
     box-shadow: 0px 11px 5px #FFFFDD99 inset, 0px -5px 10px #FFFFDD99 inset;
-    width: 99.9%;
+    width: 1000px;
     text-align: center;
     margin: 0px 0px 1px 0px;
     border: 1px solid #fff;
     outline: 1px solid #585858;
+}
+
+.rainbow {
+    position: absolute;
+    top: -15px;
+    left: 800px;
 }
 
 h1 {
@@ -68,7 +71,7 @@ nav li {
 }
 
 nav {
-    width: 99.9%;
+    width: 1000px;
     height: 20px;
     text-align: center;
     text-transform: lowercase;
@@ -86,7 +89,7 @@ nav {
 }
 
 #lowernav {
-    width: 99.9%;
+    width: 1000px;
     height: 10px;
     text-align: center;
     text-transform: lowercase;
@@ -118,7 +121,7 @@ aside h2 {
 }
 
 aside {
-    width: 20%;
+    width: 200px;
     height: inherit;
     border: 1px solid #fff;
     outline: 1px solid #585858;
@@ -177,7 +180,7 @@ aside li:hover {
 }
 
 section {
-    width: 100%;
+    width: 600px;
     height: inherit;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.5);
@@ -206,7 +209,7 @@ section a {
 }
 
 #buttons {
-    width: 99.9%;
+    width: 1000px;
     height: 31px;
     text-align: center;
     text-transform: lowercase;
@@ -220,7 +223,7 @@ section a {
 }
 
 #upperfooter {
-    width: 99.9%;
+    width: 1000px;
     height: 10px;
     text-align: center;
     text-transform: lowercase;
@@ -234,7 +237,7 @@ section a {
 }
 
 footer {
-    width: 99.9%;
+    width: 1000px;
     height: 20px;
     text-align: center;
     text-transform: lowercase;
