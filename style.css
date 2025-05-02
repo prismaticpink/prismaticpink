@@ -3,7 +3,7 @@
 @import url('/fonts/Darling.ttf');
 @font-face {
     font-family: 'Darling';
-    src: url('/fonts/Darling.ttf') format('truetype');
+    src: url('/fonts/Darling.ttf') type('truetype');
 }
 
 body {
@@ -44,6 +44,13 @@ h1.gradient {
     font-size: 50px;
     text-shadow: none;
     font-weight: 900;
+}
+
+h3 {
+    font-size: 20px;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
+    color: #f499d3;
+    font-family: 'Coming Soon';
 }
 
 nav a {
@@ -199,6 +206,10 @@ section {
 
 section a {
     color: #f255fa;
+}
+
+.homeelements {
+    display: flex;
 }
 
 .scrollbar {
