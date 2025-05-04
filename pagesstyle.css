@@ -60,6 +60,11 @@ h3 {
     font-family: 'Coming Soon';
 }
 
+strong {
+    color: #d67ab4;
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
