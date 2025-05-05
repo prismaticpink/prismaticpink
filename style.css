@@ -136,6 +136,10 @@ aside h2 {
     background-color: #bcefe0;
 }
 
+p {
+    text-align: justify;
+}
+
 ul {
     list-style-image: url('http://blog.prismatic.pink/wp-content/uploads/2024/10/icon-gif.gif');
     padding: 0px 0px 0px 20px;
