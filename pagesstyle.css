@@ -3,7 +3,7 @@
 @import url('/fonts/Darling.ttf');
 @font-face {
     font-family: 'Darling';
-    src: url('/fonts/Darling.ttf') type('truetype');
+    src: url('/fonts/Darling.ttf') format('truetype');
 }
 
 body {
@@ -34,6 +34,10 @@ h1 {
     font-family: 'Darling', serif;
     font-size: 50px;
     margin: 0px 0px 0px 0px;
+}
+
+a h1 {
+    text-decoration: none;
 }
 
 h1.gradient {
@@ -139,6 +143,11 @@ aside h2 {
     background-color: #bcefe0;
 }
 
+ul {
+    list-style-image: url('http://blog.prismatic.pink/wp-content/uploads/2024/10/icon-gif.gif');
+    padding: 0px 0px 0px 20px;
+}
+
 aside {
     width: 200px;
     height: inherit;
@@ -219,6 +228,24 @@ section {
 
 section a {
     color: #f255fa;
+}
+
+.profile {
+    display: flex;
+}
+
+.contentbox {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    text-align: center;
+    width: 100%;
+    low-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-width: thin;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
 }
 
 .homeelements {
