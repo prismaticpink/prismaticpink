@@ -230,6 +230,7 @@ section a {
 
 .homeelements {
     display: flex;
+    justify-content: flex-end; 
 }
 
 .scrollbar {
