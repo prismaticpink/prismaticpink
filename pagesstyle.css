@@ -315,3 +315,45 @@ footer {
     border: 1px solid #fff;
     outline: 1px solid #585858;
 }
+    /* Sticker Sheet Club Styling
+    http://www.stickersheetclub.neocities.org 
+    */
+    
+    /* Table Styling */
+    table {
+      background-color: #fdc2ce; 
+      border: 1px solid #fdc2ce;
+      width: 250px;
+    }
+		/* Space between the stickers */
+		td img {
+      padding:0px 5px;
+		}
+	
+    /* Black shadow around stickers
+    You can change or remove this if you want */
+		.stickersimg img {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+		}
+			
+    /* To customize mulitple sets of tables:
+    Each sticker sheet has 3 tables: ssclubheader_#, ssclubstickers_#, and #ssclubfooter_#. 
+    Give each set of tables a different number.
+    */
+	    
+    #ssclubheader_1 {
+    /* You can use the background header image code here and remove it from the HTML.
+     background-image:url('https://stickersheetclub.neocities.org/images/stickersheetheader.png'); 
+    background-repeat: no-repeat; 
+    background-position: top center;
+    */
+    }
+			
+  	#ssclubstickers_1 {
+    /* You can add a different background color or image here too! */
+    }
+			
+    #ssclubfooter_1 {
+    /* Here too! */
+    }
+			
