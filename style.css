@@ -290,3 +290,32 @@ footer {
     border: 1px solid #fff;
     outline: 1px solid #585858;
 }
+
+#statuscafe {
+    padding: .5em;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
+    color: #ffffff;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+#statuscafe-username a {
+    margin-bottom: .5em;
+    color: #585858;
+    font-family: 'Sour Gummy', sans-serif;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+}
+
+#statuscafe-username a:hover {
+    margin-bottom: .5em;
+    color: #f499d3;
+    font-family: 'Sour Gummy', sans-serif;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
