@@ -320,7 +320,7 @@ footer {
     */
     
     /* Table Styling */
-    table {
+    .stickersheet {
       background-color: #fdc2ce; 
       border: 1px solid #fdc2ce;
       width: 250px;
