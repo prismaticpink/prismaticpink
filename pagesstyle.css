@@ -356,4 +356,103 @@ footer {
     #ssclubfooter_1 {
     /* Here too! */
     }
-			
+
+    /* ===== main container ===== */
+.objets {
+	flex-direction: column;
+	width: 230px;
+	border: 1px solid #715796;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#c4fff7;
+	font-family: Verdana;
+	font-size: 9px;
+	color: #715796;
+}
+/* ===== main header container ===== */
+.hfd {
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:3px;
+	margin-bottom: 3px;
+	width: 95%;
+	padding:2px;
+	background-color:#d998d7;
+	border: 1px solid #715796;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ===== small headers ===== */
+.objets h1 {
+	font-family: Verdana;
+	font-size:10px;
+	font-weight:normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
+	padding:2px;
+	letter-spacing: .09em;
+	line-height: .9em;
+	text-align: center;
+	color:#ffffff;
+	width: 95%;
+	height: 11px;
+	border: 1px solid #715796;
+	background-color: #3e8ac6;
+}
+/* ===== box ===== */
+.objetinner {
+	flex-direction: column;
+	width: 172px;
+	height: 186px;
+	margin: auto;
+	background-image: url('https://i.ibb.co/6PTTHvs/cab.png');
+}
+/* ===== scrolling tray for collections ===== */
+.tray{
+	box-sizing: border-box;
+	width: 120px;
+	height: 43px;
+	top: 107px;
+	left: 26px;
+	border: 0px solid white;
+	position:relative;
+	overflow-x: scroll;
+	overflow-y:hidden;
+	white-space: nowrap;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.tray img {
+	margin:3px;
+}
+/* ===== area for your objets ===== */
+.myobjets {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.myobjets img {
+	margin:3px;
+}
+/* ===== scrollbar css ===== */
+/* firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #fbd3b8;
+}
+/* chrome, edge, and safari */
+.tray::-webkit-scrollbar {
+	height: 5px;
+}
+.tray::-webkit-scrollbar-thumb {
+	background-color: #fbd3b8;
+}
+.tray::-webkit-scrollbar-track {
+    background: transparent;
+  }
