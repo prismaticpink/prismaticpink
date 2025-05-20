@@ -154,6 +154,10 @@ ul {
     text-align: justify;
 }
 
+ol {
+    text-align: justify;
+}
+
 aside {
     width: 200px;
     height: inherit;
