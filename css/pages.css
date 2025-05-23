@@ -8,7 +8,7 @@
 
 body {
     background-color: #f5c6e3;
-    background-image: url(img/background.png);
+    background-image: url(../img/background.png);
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
@@ -319,6 +319,16 @@ footer {
     border: 1px solid #fff;
     outline: 1px solid #585858;
 }
+
+.zoom:hover {
+    transform: scale(1.1);
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.zoom {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
     /* Sticker Sheet Club Styling
     http://www.stickersheetclub.neocities.org 
     */
