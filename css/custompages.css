@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Parkinsans:wght@300..800&family=Pixelify+Sans:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('/fonts/Darling.ttf');
+@font-face {
+    font-family: 'Darling';
+    src: url('/fonts/Darling.ttf') format('truetype');
+}
+
+body {
+    background-color: #f5c6e3;
+    background-image: url(img/background.png);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 1000px;
+    font-size: 0;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+    background: linear-gradient(105deg, rgba(255,164,214,1) 10%, rgba(255,201,139,1) 30%, rgba(255,255,159,1) 40%, rgba(214,255,197,1) 50%, rgba(207,255,213,1) 60%, rgba(207,255,238,1) 70%, rgba(207,255,238,1) 80%, rgba(208,220,235,1) 90%, rgba(229,196,224,1) 100%);
+    box-shadow: 0px 11px 5px #FFFFDD99 inset, 0px -5px 10px #FFFFDD99 inset;
+    width: 1000px;
+    text-align: center;
+    margin: 0px 0px 1px 0px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+}
+
+h1 {
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
+    color: #fff;
+    font-family: 'Darling', serif;
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+#title {
+    text-decoration: none;
+}
+
+h1.gradient {
+    background-color: #fff;
+    background: linear-gradient(to bottom, #f2f2f2 0%,#f7f7b4 55%,#ffc6f6 56%,#ffc6f6 56%,#d7a8ff 70%,#9ff7fc 80%,#9ff7fc 80%,#f2f2f2 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    text-shadow: none;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 30px;
+    color: #82dabd;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px, #f499d3 5px 5px 5px;
+}
+
+h3 {
+    font-size: 20px;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
+    color: #f499d3;
+    font-family: 'Coming Soon';
+}
+
+strong {
+    color: #d67ab4;
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f499d3;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+}
+
+nav ul {
+    margin: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px 50px 0px 50px;
+}
+
+nav {
+    width: 1000px;
+    height: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFF 30%, #c3d7de 60%);
+    background-color: #c3d7de;
+    margin: 0px 0px 1px 0px;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Coming Soon';
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px;
+}
+
+#lowernav {
+    width: 1000px;
+    height: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFF 30%, #fff8c9 60%);
+    background-color: #fff8c9;
+    margin: 0px 0px 1px 0px;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    color: #585858;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    margin: 0px 0px 1px 0px;
+}
+
+aside h2 {
+    margin: 0;
+    padding: 0px 0px 0px 5px;
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: #585858;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+    background-color: #bcefe0;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style-image: url('http://blog.prismatic.pink/wp-content/uploads/2024/10/icon-gif.gif');
+    padding: 0px 0px 0px 20px;
+    text-align: justify;
+}
+
+ol {
+    text-align: justify;
+}
+
+aside {
+    width: 200px;
+    height: inherit;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    margin: 0;
+    float: left;
+    color: #585858;
+    padding: 0;
+    background-color: rgb(245, 180, 193, 0.5);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+}
+
+aside ul {
+    margin: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+aside li {
+    display: flex;
+    background: linear-gradient(180deg, #FDDCFF 30%, #f5b4c1 60%);
+    border: 1px solid #fff;
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    list-style-type: none;
+}
+
+aside a {
+    color: #fff;
+    text-shadow: #585858 2px 1px 1px;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #f499d3;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+}
+
+aside li:hover {
+    background: linear-gradient(180deg, #FDDCFF 30%, #99f4d5 60%);
+}
+
+#rainbow {
+    width: 100%;
+    text-align: center;
+    text-transform: lowercase;
+    background: url('http://blog.prismatic.pink/wp-content/uploads/2024/11/bg-rainbow.gif');
+    background-color: #b0e6ac;
+    color: #585858;
+    margin: 0;
+    font-family: 'Pixelify Sans';
+    font-size: 10px;
+    height: 28px;
+}
+
+section {
+    width: 1000px;
+    height: inherit;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #585858;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    float: right;
+    font-family: 'Georgia';
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+section a {
+    color: #f255fa;
+}
+
+.profile {
+    display: flex;
+}
+
+.contentbox {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    text-align: center;
+    width: 100%;
+    low-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-width: thin;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+}
+
+.homeelements {
+    display: flex;
+}
+
+.scrollbar {
+    text-align: center;
+    width: 100%;
+    low-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-width: thin;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+}
+
+#buttons {
+    width: 1000px;
+    height: 31px;
+    text-align: center;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFF 30%, #d8b3fa 60%);
+    background-color: #d8b3fa;
+    margin: 0px 0px 1px 0px;
+    padding: 0;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    color: #585858;
+}
+
+#upperfooter {
+    width: 1000px;
+    height: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFF 30%, #fff8c9 60%);
+    background-color: #fff8c9;
+    margin: 0px 0px 1px 0px;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    color: #585858;
+}
+
+footer {
+    width: 1000px;
+    height: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    background: linear-gradient(180deg, #FFF 30%, #b0e6ac 60%);
+    background-color: #b0e6ac;
+    color: #585858;
+    text-shadow: #f255fa 2px 2px 2px;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Pixelify Sans';
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+}
+
+td img {
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+		}
+
+.zoom:hover {
+    transform: scale(1.1);
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.zoom {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+table {
+  border-spacing: 7px;
+}
