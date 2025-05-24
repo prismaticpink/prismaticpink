@@ -329,6 +329,16 @@ footer {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.pixel:hover {
+    transform: scale(3);
+    image-rendering: pixelated;
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.pixel {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
     /* Sticker Sheet Club Styling
     http://www.stickersheetclub.neocities.org 
     */
