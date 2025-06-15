@@ -222,6 +222,7 @@ section {
     font-family: 'Georgia';
     letter-spacing: 1px;
     font-size: 14px;
+    position: relative;
 }
 
 section a {
@@ -231,6 +232,11 @@ section a {
 .homeelements {
     display: flex;
     justify-content: flex-end; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 .scrollbar {
