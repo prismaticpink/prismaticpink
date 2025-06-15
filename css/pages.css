@@ -148,6 +148,21 @@ p {
     text-align: justify;
 }
 
+.info-table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  text-align: left;
+}
+
+.info-table tr {
+    background-color: rgb(245, 180, 193, 0.5);
+}
+
+.info-table td {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+}
+
 ul {
     list-style-image: url('http://blog.prismatic.pink/wp-content/uploads/2024/10/icon-gif.gif');
     padding: 0px 0px 0px 20px;
@@ -156,6 +171,26 @@ ul {
 
 ol {
     text-align: justify;
+}
+
+.no-button {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #585858;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+    display: inline-flex;
+    width: 88px;
+    height: 31px;
+    background: linear-gradient(105deg, rgba(255,164,214,1) 10%, rgba(255,201,139,1) 30%, rgba(255,255,159,1) 40%, rgba(214,255,197,1) 50%, rgba(207,255,213,1) 60%, rgba(207,255,238,1) 70%, rgba(207,255,238,1) 80%, rgba(208,220,235,1) 90%, rgba(229,196,224,1) 100%);
+    border: 1px solid #585858;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 aside {
