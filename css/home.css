@@ -263,6 +263,9 @@ section a {
     border: 1px solid #fff;
     outline: 1px solid #585858;
     color: #585858;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 #upperfooter {
@@ -277,6 +280,29 @@ section a {
     border: 1px solid #fff;
     outline: 1px solid #585858;
     color: #585858;
+}
+
+#buttons:hover .marquee {
+  animation-play-state: paused;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 35s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee img {
+  height: 31px;
 }
 
 footer {
