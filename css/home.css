@@ -239,6 +239,25 @@ section a {
 
 }
 
+.affies-banners {
+    width: 100%;
+    height: px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+}
+
+.affies-scrolling {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+}
+
+.affies-banners:hover .affies-scrolling {
+  animation-play-state: paused;
+}
+
 .scrollbar {
     text-align: center;
     width: 100%;
