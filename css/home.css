@@ -16,7 +16,8 @@ a {
 
 body {
     background-color: #f5c6e3;
-    background-image: url(../img/background.png);
+    background-image: url(../img/bgteste2.jpg);
+    background-attachment: fixed;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
