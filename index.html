@@ -8,6 +8,68 @@
 <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body>
+        
+
+          <div id="right-click">
+    <ul>
+        <h3 class="home-subtitles">Don't copy! </h3>
+        <li><a href="#" id="reload-page">Reload</a></li>
+        <li><a href="#" id="close-tab">Close Tab</a></li>
+        <li><a href="mailto:prismaticpink@proton.me">Email</a></li>
+        <li><a href="https://prismatic.pink">Main Site</a></li>
+        <li><a href="https://blog.prismatic.pink">Blog</a></li>
+        <li><a href="https://pixels.prismatic.pink">Pixel Art</a></li>
+        <span style="text-shadow: #f255fa 2px 2px 2px;">© 2024 Sakkie</span>
+    </ul>
+  </div>
+
+<script>
+  const customMenu = document.getElementById('right-click');
+
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+
+    // Show menu to measure size
+    customMenu.style.display = 'block';
+
+    // Temporarily reset position to 0,0 for accurate measurements
+    customMenu.style.left = '0px';
+    customMenu.style.top = '0px';
+
+    const menuRect = customMenu.getBoundingClientRect();
+    const winWidth = window.innerWidth;
+    const winHeight = window.innerHeight;
+    const buffer = 5;
+
+    let posX = e.clientX;
+    let posY = e.clientY;
+
+    if (posX + menuRect.width + buffer > winWidth) {
+      posX = winWidth - menuRect.width - buffer;
+    }
+    if (posY + menuRect.height + buffer > winHeight) {
+      posY = winHeight - menuRect.height - buffer;
+    }
+
+    customMenu.style.left = posX + 'px';
+    customMenu.style.top = posY + 'px';
+  });
+
+  document.addEventListener('click', () => {
+    customMenu.style.display = 'none';
+  });
+
+  document.getElementById('reload-page').addEventListener('click', (e) => {
+    e.preventDefault();
+    location.reload();
+  });
+
+  document.getElementById('close-tab').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.close();
+  });
+</script>
+
         <header><a href="https://prismatic.pink" id="title"><h1>Prismatic Pin</h1></a></header>
         <nav>
             <ul>
@@ -55,7 +117,73 @@
             <li><a href="/tea.html">Tea</a></li>
             <li><a href="/stationery.html">Stationery</a></li>
             </ul>
-            <h2>Webrings</h2>
+            </ul>
+            <h2>Cliques</h2>	
+            <div class="scrollbar" style="height: 282px">
+                <a href="https://lovesick.cafe/grrrl" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/12/madebyagirl1.png"></a> <a href="http://sailorcrystal.net/guardians/" target="_blank" title="protected by Sailor Chibi Moon!"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/chibimoon.png" class="prettyguardians" alt="Sailor Chibi Moon"></a> <a href="http://web.archive.org/b/20021007220205/http://www.dolls.com.br/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/11/bk_dolls05.gif"></a> <a href="https://allyratworld.com/cafe/rose" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/IMG_0279.png"></a>
+                <br />
+                <a href="https://sanrioness.neocities.org/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/code1.gif"></a><a href="https://web.archive.org/web/20030408014702/http://www.bubbleshoes.net/pixel/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/I-heart-pixels92.gif"></a>
+                <a href="https://web.archive.org/web/20020929220035/http://www.patria.kit.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/sitebrasileiro.gif"></a> <a href="https://web.archive.org/web/20030319172909/http://kittycat.justlia.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/cl_kittycat.gif"></a>
+            <br /><a href="https://linklane.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/linklane.png"></a> <a href="https://list-me.com/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/listme.png"></a>
+<br/>
+<a href="https://web.archive.org/web/20041209084731/http://www.mitsuzo.net/tea/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/tea.gif"></a> <a href="https://ac.kuchiki.net/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/tia.gif" title="pixel friends | Tia"></a> <a href="https://pixelrevival.xyz/boba/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/boba6.gif"></a>
+<br /><a href="http://web.archive.org/web/20080619035056/http://princessportal.com/the-princess-code/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/pcbanner.gif"></a>
+            </div>
+        </aside> 
+        <section>         
+            <br><img src="img/welcome3.gif" alt="Welcome">
+            <p>Welcome to Prismatic Pink! This website is intended to be a compendium of everything I enjoy and cherish.</p>
+            <p>It is originally designed for desktops because I believe mobile versions compromise creative freedom. However, the <a href="https://blog.prismatic.pink">blog</a> is responsive for accessibility purposes.</p>
+            <img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/viewedfirefox2.png" alt="Best viewed in Mozilla Firefox">
+            <br /><a href="https://fan.sanguineroyal.com/cli/barbieland/" target="_blank">Barbieland <img decoding="async" src="https://iili.io/HD7xIff.png" style="height: 16px; width:16px;"></a> This Barbie loves pink!
+            <br /><a href="http://aromatic.wings.nu/" target="_blank">aromatic</a> // Guerlain Météorites
+                <div class="affies-banners">
+                <h3 class="home-subtitles">Featured Sites</h3>
+                <div class="affies-scrolling"><a href="https://inspiremari.nl/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/inspiremari200x40-button01.png"></a> <a href="https://lovesick.cafe/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/lovesick.png"></a> <a href="https://allyratworld.com/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/allyrat.png"></a></div></div>
+            <div class="home-elements">
+            <div class="home-boxes">
+            <h3 class="home-subtitles">Updates</h3>
+            <div class="home-scrollbar">
+            <ul>
+                <li><strong>15/06/2025:</strong> <a href="https://pixels.prismatic.pink">Pixel Art</a> subdomain is now online!</li>
+                <li><strong>20/05/2025:</strong> New page: <a href="/mybag.html">My bag</a>!</li>
+                <li><strong>19/05/2025:</strong> Birthday update! :D New <a href="/links.html">archived links</a> and new <a href="/toybox.html">adopted items</a>.</li>
+                <li><strong>16/05/2025:</strong> New <a href="/pixelclubs.html">Pixel Clubs</a>!</li>
+                <li><strong>05/05/2025:</strong> <a href="/about.html">About</a>, <a href="/dolls.html">Dolls</a>, <a href="/pixelart.html">Pixel Art</a>, <a href="/pixelclubs.html">Pixel Clubs</a>, <a href="/toybox.html">Toybox</a>, <a href="/resources.html">Resources</a> and <a href="/credits.html">Credits</a> are all up!</li>
+                <li><strong>04/05/2025:</strong> <a href="/links.html">Links</a> page is up!</li>
+                </ul>
+            </div>
+            </div>
+            <div class="home-boxes">
+            <h3 class="home-subtitles">To-do</h3>
+            <div class="home-scrollbar">
+            <ul>
+                <li>Finish uploading books</li>
+                <li>Upload films</li>
+                <li>Upload anime</li>
+                <li>Upload manga</li>
+                <li><s>Upload my bag</s></li>
+                <li><s>Finish About Me page</s></li>
+                <li><s>Finish Links page</s></li>
+                <li><s>Finish Pixel Clubs page</s></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        <aside>
+            <h2>Status</h2>
+            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=prismaticpink" defer></script>
+            <h2>Shoutbox</h2>
+            <iframe src="https://www5.cbox.ws/box/?boxid=954797&boxtag=XQCgju" width="100%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            <h2>Link Me</h2>
+            <div class="scrollbar" style="height: 70px;"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/10/prismaticbutton.gif"><img src="https://i.ibb.co/LNHBGTn/prismaticpink-button2.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/88x31prismaticpink3.gif"><img src="https://i.ibb.co/6N883x0/prismaticminibutton.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/heartbutton_an.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/prismaticbutton32x32.gif"></div>
+            <h2>Affies</h2>
+        <div class="scrollbar" style="height: 70px;">
+        <a href="https://crisjr.eng.br/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/cris.gif"></a><a href="https://inspiremari.nl/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/inspiremari-32x32-button01.gif"></a><a href="https://pomelo.lol/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/pomelo.gif"></a><a href="https://mooncandy.net/rave/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/spacerave.gif"></a><a href="https://humanfinny.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/finnysanx.png"></a><a href="https://lovesick.cafe/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/lovesick-32x32-gif.gif"></a><a href="https://allyratworld.com/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/allyratmew3232.gif"></a><a href="https://exnihl.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/exnihl32x32.gif"></a></div>
+        <span style="font-size: 10px; text-align: center;">More links <a href="/links.html">here</a>. Let's exchange 32x32s, send me an email!</span>
+        <h2>Webrings</h2>
             <div class="scrollbar" style="height: 150px">
                 <div id='shoujosei-ring'>
                     <script type="text/javascript" src="https://angeleyesprings.neocities.org/webring/onionring-variables.js"></script>
@@ -71,135 +199,6 @@
         <br />
         <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#585858" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
         </div>
-            </ul>
-            <h2>Cliques</h2>	
-            <div class="scrollbar" style="height: 150px">
-                <a href="https://lovesick.cafe/grrrl" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/12/madebyagirl1.png"></a> <a href="http://sailorcrystal.net/guardians/" target="_blank" title="protected by Sailor Chibi Moon!"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/chibimoon.png" class="prettyguardians" alt="Sailor Chibi Moon"></a> <a href="http://web.archive.org/b/20021007220205/http://www.dolls.com.br/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/11/bk_dolls05.gif"></a> <a href="https://allyratworld.com/cafe/rose" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/IMG_0279.png"></a>
-                <br />
-                <a href="https://sanrioness.neocities.org/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/code1.gif"></a><a href="https://web.archive.org/web/20030408014702/http://www.bubbleshoes.net/pixel/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/I-heart-pixels92.gif"></a>
-<br/>
-<a href="https://web.archive.org/web/20041209084731/http://www.mitsuzo.net/tea/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/tea.gif"></a> <a href="https://ac.kuchiki.net/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/tia.gif" title="pixel friends | Tia"></a> <a href="https://pixelrevival.xyz/boba/" target="_blank"><img decoding="async" src="http://blog.prismatic.pink/wp-content/uploads/2024/10/boba6.gif"></a>
-<br /><a href="http://web.archive.org/web/20080619035056/http://princessportal.com/the-princess-code/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/pcbanner.gif"></a>
-            </div>
-        </aside> 
-        <section>         
-            <br><img src="img/welcome3.gif" alt="Welcome">
-            <p>Welcome to Prismatic Pink! This website is intended to be a compendium of everything I enjoy and cherish.</p>
-            <p>It is originally designed for desktops because I believe mobile versions compromise creative freedom. However, the <a href="https://blog.prismatic.pink">blog</a> is responsive for accessibility purposes.</p>
-            <img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/viewedfirefox2.png" alt="Best viewed in Mozilla Firefox">
-            <br/><a href="https://fan.sanguineroyal.com/cli/barbieland/" target="_blank">Barbieland <img decoding="async" src="https://iili.io/HD7xIff.png" style="height: 16px; width:16px;"></a> This Barbie loves pink!
-            <br /><a href="http://aromatic.wings.nu/" target="_blank">aromatic</a> // Guerlain Météorites
-            <br /><a href="https://web.archive.org/web/20020929220035/http://www.patria.kit.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/sitebrasileiro.gif"></a> <a href="https://web.archive.org/web/20030319172909/http://kittycat.justlia.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/cl_kittycat.gif"></a>
-            <br /><a href="https://linklane.net/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/linklane.png"></a> <a href="https://list-me.com/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/listme.png"></a>
-                        <h2 style="    margin: 0;
-    padding: 0px 0px 0px 5px;
-    font-family: 'Sour Gummy', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
-    background-color: #bcefe0;
-    width: 595px;
-    position: absolute;
-    bottom: 245px;
-    left: 0;">Featured Sites</h2>
-            <div class="affies-banners"><div class="affies-scrolling"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/inspiremari200x40-button01.png"> <img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/lovesick.png"> <img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/allyrat.png"></div></div>
-            <div class="homeelements">
-            <div style="
-            margin:1em 0;
-            width:50%; height:inherit;">
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado1.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado2.gif);
-            background-position:top left, top right;
-            background-repeat:no-repeat, no-repeat;
-            height:32px;">
-            <div style="background:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-ue.gif) repeat-x;
-            height:32px;
-            margin:0 32px;"></div>
-            </div>
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-migi.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-hidari.gif);
-            background-position:top right, top left;
-            background-repeat:repeat-y, repeat-y;">
-            <div style="background:#fff;
-            margin:0 32px;
-            padding:10px; height:100px;     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
-    scrollbar-width: thin;">
-            <h3 style="margin:0; padding:0;">Updates</h3>
-            <ul style="text-align: left; margin: 0; padding: 5px;">
-                <li><strong>15/06/2025:</strong> <a href="https://pixels.prismatic.pink">Pixel Art</a> subdomain is now online!</li>
-                <li><strong>20/05/2025:</strong> New page: <a href="/mybag.html">My bag</a>!</li>
-                <li><strong>19/05/2025:</strong> Birthday update! :D New <a href="/links.html">archived links</a> and new <a href="/toybox.html">adopted items</a>.</li>
-                <li><strong>16/05/2025:</strong> New <a href="/pixelclubs.html">Pixel Clubs</a>!</li>
-                <li><strong>05/05/2025:</strong> <a href="/about.html">About</a>, <a href="/dolls.html">Dolls</a>, <a href="/pixelart.html">Pixel Art</a>, <a href="/pixelclubs.html">Pixel Clubs</a>, <a href="/toybox.html">Toybox</a>, <a href="/resources.html">Resources</a> and <a href="/credits.html">Credits</a> are all up!</li>
-                <li><strong>04/05/2025:</strong> <a href="/links.html">Links</a> page is up!</li>
-                </ul>
-            </div>
-            </div>
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado3.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado4.gif);
-            background-position:top left, top right;
-            background-repeat:no-repeat, no-repeat;
-            height:32px;">
-            <div style="background:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-sita.gif) repeat-x;
-            height:32px;
-            margin:0 32px;"></div>
-            </div>
-            </div>
-            <div style="
-            margin:1em 0;
-            width:50%; height:inherit;">
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado1.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado2.gif);
-            background-position:top left, top right;
-            background-repeat:no-repeat, no-repeat;
-            height:32px;">
-            <div style="background:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-ue.gif) repeat-x;
-            height:32px;
-            margin:0 32px;"></div>
-            </div>
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-migi.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-hidari.gif);
-            background-position:top right, top left;
-            background-repeat:repeat-y, repeat-y;">
-            <div style="background:#fff;
-            margin:0 32px;
-            padding:10px; height: 100px;     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
-    scrollbar-width: thin;">
-            <h3 style="margin:0; padding:0;">To-do</h3>
-            <ul style="text-align: left; margin: 0; padding: 5px;">
-                <li>Finish uploading books</li>
-                <li>Upload films</li>
-                <li>Upload anime</li>
-                <li>Upload manga</li>
-                <li><s>Upload my bag</s></li>
-                <li><s>Finish About Me page</s></li>
-                <li><s>Finish Links page</s></li>
-                <li><s>Finish Pixel Clubs page</s></li>
-                </ul>
-            </div>
-            </div>
-            <div style="background-image:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado3.gif), url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-kado4.gif);
-            background-position:top left, top right;
-            background-repeat:no-repeat, no-repeat;
-            height:32px;">
-            <div style="background:url(http://blog.prismatic.pink/wp-content/uploads/2025/05/f-sita.gif) repeat-x;
-            height:32px;
-            margin:0 32px;"></div>
-            </div>
-            </div>
-        </div>
-        </section>
-        <aside>
-            <h2>Status</h2>
-            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=prismaticpink" defer></script>
-            <h2>Shoutbox</h2>
-            <iframe src="https://www5.cbox.ws/box/?boxid=954797&boxtag=XQCgju" width="100%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-            <h2>Link Me</h2>
-            <div class="scrollbar" style="height: 70px;"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/10/prismaticbutton.gif"><img src="https://i.ibb.co/LNHBGTn/prismaticpink-button2.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/06/88x31prismaticpink3.gif"><img src="https://i.ibb.co/6N883x0/prismaticminibutton.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/heartbutton_an.gif"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/prismaticbutton32x32.gif"></div>
-            <h2>Affies</h2>
-        <div class="scrollbar" style="height: 70px;">
-        <a href="https://crisjr.eng.br/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/cris.gif"></a><a href="https://inspiremari.nl/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/inspiremari-32x32-button01.gif"></a><a href="https://pomelo.lol/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/pomelo.gif"></a><a href="https://mooncandy.net/rave/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/spacerave.gif"></a><a href="https://humanfinny.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/finnysanx.png"></a><a href="https://lovesick.cafe/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/lovesick-32x32-gif.gif"></a><a href="https://allyratworld.com/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/05/allyratmew3232.gif"></a></div>
-        <span style="font-size: 10px; text-align: center;">More links <a href="/links.html">here</a>. Let's exchange 32x32s, send me an email!</span>
-        <img src="http://blog.prismatic.pink/wp-content/uploads/2024/12/fa51ae10.gif">
         </aside>
     </main>
     <div id="buttons"><div class="marquee"><a href="https://adriansblinkiecollection.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/10/bestviewed.gif"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/VSCbutton.png"></a> <a href="https://pixelsafari.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/11/1bw32.jpg"></a> <a href="https://adriansblinkiecollection.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/10/antiai.gif"></a> <a href="https://adriansblinkiecollection.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/10/mspaint.gif"></a> <a href="https://rentry.co/PUSHURT3MPER" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/11/nowebp.gif"></a> <a href="https://pixelsafari.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/11/1bw19.gif"></a> <a href="https://pixelsafari.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2024/11/1twitter2.gif"></a> <a href="https://pixelsafari.neocities.org/" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/1google2.gif"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/getphysicalbutton.gif"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/keyboardbutton.png"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/vhsbutton.gif"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/nosignalbutton.gif"></a> <a href="https://wrender.neocities.org/graphics" target="_blank"><img src="http://blog.prismatic.pink/wp-content/uploads/2025/01/nyancatbutton.gif"></a></div></div>
