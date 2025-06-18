@@ -22,54 +22,6 @@
         <span style="text-shadow: #f255fa 2px 2px 2px;">© 2024 Sakkie</span>
     </ul>
   </div>
-
-<script>
-  const customMenu = document.getElementById('right-click');
-
-  document.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-
-    // Show menu to measure size
-    customMenu.style.display = 'block';
-
-    // Temporarily reset position to 0,0 for accurate measurements
-    customMenu.style.left = '0px';
-    customMenu.style.top = '0px';
-
-    const menuRect = customMenu.getBoundingClientRect();
-    const winWidth = window.innerWidth;
-    const winHeight = window.innerHeight;
-    const buffer = 5;
-
-    let posX = e.clientX;
-    let posY = e.clientY;
-
-    if (posX + menuRect.width + buffer > winWidth) {
-      posX = winWidth - menuRect.width - buffer;
-    }
-    if (posY + menuRect.height + buffer > winHeight) {
-      posY = winHeight - menuRect.height - buffer;
-    }
-
-    customMenu.style.left = posX + 'px';
-    customMenu.style.top = posY + 'px';
-  });
-
-  document.addEventListener('click', () => {
-    customMenu.style.display = 'none';
-  });
-
-  document.getElementById('reload-page').addEventListener('click', (e) => {
-    e.preventDefault();
-    location.reload();
-  });
-
-  document.getElementById('close-tab').addEventListener('click', (e) => {
-    e.preventDefault();
-    window.close();
-  });
-</script>
-
         <header><a href="https://prismatic.pink" id="title"><h1>Prismatic Pin</h1></a></header>
         <nav>
             <ul>
