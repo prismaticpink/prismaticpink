@@ -6,6 +6,14 @@
     src: url('/fonts/Darling.ttf') format('truetype');
 }
 
+html, body {
+    cursor: url('../img/cursor.gif'), auto;
+}
+
+a {
+  cursor: url('../img/cursor.gif'), auto;
+}
+
 body {
     background-color: #f5c6e3;
     background-image: url(../img/background.png);
@@ -336,3 +344,50 @@ td img {
 table {
   border-spacing: 7px;
 }
+
+  #right-click {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100px;
+    height: 150px;
+    background-color: rgba(245, 180, 193, 0.5);
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    color: #585858;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Sour Gummy', cursive;
+    padding: 5px;
+  }
+
+  #right-click ul {
+    color: #585858;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Sour Gummy', cursive;
+  }
+
+  #right-click li {
+    color: #585858;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Sour Gummy', cursive;
+  }
+
+  #right-click a {
+    text-decoration: none;
+    color: #585858;
+    display: block;
+    width: 100%;
+  }
+
+  #right-click li:hover {
+    background-color: #f0f0f0;
+  }
