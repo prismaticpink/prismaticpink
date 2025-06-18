@@ -341,7 +341,7 @@ section a {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: -1px 0 0 0 #585858, 1px 0 0 0 #585858;
     color: #585858;
 }
 
