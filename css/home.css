@@ -12,6 +12,7 @@ html, body {
 
 a {
   cursor: url('../img/cursor.gif'), auto;
+  color: #f255fa;
 }
 
 body {
@@ -29,6 +30,8 @@ body {
     scrollbar-color: #f255fa #e6e6e6;
     scrollbar-width: thin;
     border-radius: 50px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
 }
 
 header {
@@ -37,8 +40,6 @@ header {
     width: 1000px;
     text-align: center;
     margin: 0px 0px 1px 0px;
-    border: 1px solid #fff;
-    outline: 1px solid #585858;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -109,7 +110,7 @@ nav {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
     letter-spacing: 1px;
     color: #fff;
     font-family: 'Coming Soon';
@@ -128,14 +129,16 @@ nav {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: 0 1px 0 0 #585858;
     color: #585858;
 }
 
 main {
-    width: 100%;
+    max-width: 1000px;
     display: flex;
-    margin: 0px 0px 1px 0px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 aside h2 {
@@ -166,8 +169,6 @@ ul {
 aside {
     width: 200px;
     height: inherit;
-    border: 1px solid #fff;
-    outline: 1px solid #585858;
     margin: 0;
     float: left;
     color: #585858;
@@ -176,6 +177,7 @@ aside {
     font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Georgia';
+    flex-shrink: 0;
 }
 
 aside ul {
@@ -225,9 +227,16 @@ aside li:hover {
     height: 28px;
 }
 
-section {
+#main-content {
     width: 600px;
     height: inherit;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 600px;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.5);
     color: #585858;
@@ -235,7 +244,6 @@ section {
     padding: 5px;
     border: 1px solid #fff;
     outline: 1px solid #585858;
-    float: right;
     font-family: 'Georgia';
     letter-spacing: 1px;
     font-size: 14px;
@@ -247,13 +255,16 @@ section a {
 }
 
 .home-elements {
+    width: 600px;
+    height: 600px;
     display: flex;
     justify-content: flex-end; 
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 150px;
+    box-shadow:
+    0 -1px 0 0 #585858,
+    -1px 0 0 0 #585858,
+    1px 0 0 0 #585858;
 
 }
 
@@ -293,17 +304,19 @@ section a {
     scrollbar-width: thin;
     height: 100%;
     box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+    color: #585858;
 }
 
 .affies-banners {
-    width: 100%;
-    height: px;
+    width: 600px;
+    height: 62px;
     overflow: hidden;
-    position: absolute;
     bottom: 151px;
-    left: 0;
     border: 1px solid #fff, 0px solid #fff, 1px solid #fff, 0px solid #fff;
-    box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
+    outline: 1px solid #585858;
     background-color: rgb(245, 180, 193, 0.5);
 }
 
@@ -329,6 +342,11 @@ section a {
     font-family: 'Georgia';
 }
 
+#bottom-elements {
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+}
+
 #buttons {
     width: 1000px;
     height: 31px;
@@ -336,12 +354,12 @@ section a {
     text-transform: lowercase;
     background: linear-gradient(180deg, #FFF 30%, #d8b3fa 60%);
     background-color: #d8b3fa;
-    margin: 0px 0px 1px 0px;
+    margin: 1px 0px 1px 0px;
     padding: 0;
     border: 1px solid #fff;
-    box-shadow: -1px 0 0 0 #585858, 1px 0 0 0 #585858;
+    box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
     color: #585858;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     box-sizing: border-box;
 }
@@ -356,7 +374,7 @@ section a {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    box-shadow: -1px -1px 0 0 #585858, 1px 0 0 0 #585858;
+    box-shadow: 0 1px 0 0 #585858;
     color: #585858;
 }
 
@@ -398,8 +416,6 @@ footer {
     font-size: 12px;
     letter-spacing: 1px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
-    border-radius: 0px 0px 50px 50px;
 }
 
 #statuscafe {
