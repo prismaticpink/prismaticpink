@@ -28,6 +28,7 @@ body {
     overflow-x: hidden;
     scrollbar-color: #f255fa #e6e6e6;
     scrollbar-width: thin;
+    border-radius: 50px;
 }
 
 header {
@@ -38,6 +39,7 @@ header {
     margin: 0px 0px 1px 0px;
     border: 1px solid #fff;
     outline: 1px solid #585858;
+    border-radius: 50px 50px 0px 0px;
 }
 
 h1 {
@@ -354,7 +356,7 @@ section a {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: -1px -1px 0 0 #585858, 1px 0 0 0 #585858;
     color: #585858;
 }
 
@@ -397,6 +399,7 @@ footer {
     letter-spacing: 1px;
     border: 1px solid #fff;
     outline: 1px solid #585858;
+    border-radius: 0px 0px 50px 50px;
 }
 
 #statuscafe {
