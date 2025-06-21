@@ -360,6 +360,7 @@ section a {
     border: 1px solid #fff, 0px solid #fff, 1px solid #fff, 0px solid #fff;
     outline: 1px solid #585858;
     background-color: rgb(245, 180, 193, 0.5);
+    flex-shrink: 0;
 }
 
 .affies-scrolling {
