@@ -65,11 +65,23 @@ h1.gradient {
     font-weight: 900;
 }
 
+h2 {
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 30px;
+    color: #82dabd;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px, #f499d3 5px 5px 5px;
+}
+
 h3 {
     font-size: 20px;
     text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
     color: #f499d3;
     font-family: 'Coming Soon';
+}
+
+strong {
+    color: #d67ab4;
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
 }
 
 a:hover {
@@ -154,15 +166,35 @@ aside h2 {
     background: linear-gradient( to right, rgba(245, 200, 200, 0.925) 0%, rgba(241, 195, 234, 0.925) 20%, rgba(247, 152, 195, 0.925) 40%, rgba(224, 130, 238, 0.925) 60%, rgba(190, 175, 241, 0.925) 80%, rgba(151, 245, 235, 0.925) 100% );
     border: 1px solid #fff;
     box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
+    color: #585858;
 }
 
 p {
     text-align: justify;
 }
 
+.info-table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  text-align: left;
+}
+
+.info-table tr {
+    background-color: rgb(245, 180, 193, 0.5);
+}
+
+.info-table td {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+}
+
 ul {
     list-style-image: url('http://blog.prismatic.pink/wp-content/uploads/2024/10/icon-gif.gif');
     padding: 0px 0px 0px 20px;
+    text-align: justify;
+}
+
+ol {
     text-align: justify;
 }
 
