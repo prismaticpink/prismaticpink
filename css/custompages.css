@@ -12,6 +12,7 @@ html, body {
 
 a {
   cursor: url('../img/cursor.gif'), auto;
+  color: #f255fa;
 }
 
 body {
@@ -25,7 +26,12 @@ body {
     font-size: 0;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: hidden;
+    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-width: thin;
     border-radius: 50px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
 }
 
 header {
@@ -34,8 +40,6 @@ header {
     width: 1000px;
     text-align: center;
     margin: 0px 0px 1px 0px;
-    border: 1px solid #fff;
-    outline: 1px solid #585858;
     border-radius: 50px 50px 0px 0px;
 }
 
@@ -113,7 +117,7 @@ nav {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
     letter-spacing: 1px;
     color: #fff;
     font-family: 'Coming Soon';
@@ -132,14 +136,16 @@ nav {
     margin: 0px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: 0 1px 0 0 #585858;
     color: #585858;
 }
 
 main {
-    width: 100%;
+    max-width: 1000px;
     display: flex;
-    margin: 0px 0px 1px 0px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 aside h2 {
@@ -299,6 +305,14 @@ section a {
     color: #585858;
 }
 
+#bottom-elements {
+    border-radius: 0 0 50px 50px;
+    margin: 1px 0px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 -1px 0 0 #585858;
+    z-index: 1;
+}
+
 #upperfooter {
     width: 1000px;
     height: 10px;
@@ -306,10 +320,10 @@ section a {
     text-transform: lowercase;
     background: linear-gradient(180deg, #FFF 30%, #fff8c9 60%);
     background-color: #fff8c9;
-    margin: 0px 0px 1px 0px;
+    margin: 1px 0px 1px 0px;
     padding: 5px 0px 5px 0px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
+    box-shadow: 0 1px 0 0 #585858;
     color: #585858;
 }
 
@@ -328,8 +342,6 @@ footer {
     font-size: 12px;
     letter-spacing: 1px;
     border: 1px solid #fff;
-    outline: 1px solid #585858;
-    border-radius: 0px 0px 50px 50px;
 }
 
 td img {
