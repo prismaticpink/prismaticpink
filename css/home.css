@@ -199,6 +199,16 @@ aside li {
     list-style-type: none;
 }
 
+aside li a {
+  display: block; 
+  width: 100%;     
+  height: 100%; 
+  padding: 10px 15px; 
+  color: #fff;
+  text-shadow: #585858 2px 1px 1px;
+  text-decoration: none;
+}
+
 aside a {
     color: #fff;
     text-shadow: #585858 2px 1px 1px;
