@@ -6,3 +6,12 @@
       })
       .catch(err => console.error('Failed to load menu:', err));
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.getElementById('menu-toggle');
+  const asideMenu = document.querySelector('main aside');
+
+  toggleBtn.addEventListener('click', function () {
+    asideMenu.classList.toggle('open');
+  });
+});
