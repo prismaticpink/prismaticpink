@@ -407,3 +407,149 @@ table {
   #right-click li:hover {
     background-color: #f0f0f0;
   }
+
+   @media (max-width: 768px) {
+  #left-aside {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: rgb(245, 180, 193, 0.5);
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  #left-aside.open {
+    left: 0;
+  }
+
+  #menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    background: rgb(245, 180, 193, 0.5);
+    box-shadow: 0px 11px 5px #FFFFDD99 inset, 0px -5px 10px #FFFFDD99 inset;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+   body {
+    width: 95%;
+    max-width: 100vw;
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    }
+
+    header {
+    width: 100%;
+    max-width: 100vw;
+    }
+
+    nav {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    }
+
+    main {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+    #main-content {
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+    section {
+    width: 100%;
+  max-width: 100vw;
+  padding: 20px;
+  order: 1;
+  box-sizing: border-box;
+    }
+
+  .cliques {
+    order: 4;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+    #right-aside {
+    order: 5;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+    .welcome {
+    width: 100%;
+    }
+
+    #lowernav {
+    width: 100%;
+    max-width: 100vw;
+    }
+
+  .some-column {
+    width: 100%;
+    max-width: 100vw;
+    margin-bottom: 20px;
+  }
+    .affies-banners {
+    width: 100%;
+    max-width: 100vw;
+    order: 2;
+    }
+
+    .home-elements {
+    width: 100%;
+    max-width: 100vw;
+    order: 3;
+    }
+
+    #buttons {
+    width: 100%;
+    max-width: 100vw;
+    order: 6;
+    }
+
+    #upperfooter {
+    width: 100%;
+    max-width: 100vw;
+    order: 7;
+    }
+
+   footer {
+    width: 100%;
+    max-width: 100vw;
+    order: 8;
+    }
+
+}
