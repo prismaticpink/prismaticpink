@@ -667,6 +667,11 @@ footer {
     flex-direction: column;
   }
 
+    .profile {
+    display: flex;
+    flex-direction: column;
+  }
+
     section {
     width: 100%;
   max-width: 100vw;
