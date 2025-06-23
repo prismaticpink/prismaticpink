@@ -602,7 +602,7 @@ footer {
     z-index: 1000;
   }
 
-  #left-aside.open {
+  .menu-open #left-aside {
     left: 0;
   }
 
@@ -621,6 +621,10 @@ footer {
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    transition: left 0.3s ease;
+  }
+    .menu-open #menu-toggle {
+  left: 250px;
   }
 }
 
