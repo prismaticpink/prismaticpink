@@ -7,11 +7,17 @@
       .catch(err => console.error('Failed to load menu:', err));
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-  const toggleBtn = document.getElementById('menu-toggle');
-  const asideMenu = document.querySelector('main aside');
+document.addEventListener('DOMContentLoaded', () => {
 
-  toggleBtn.addEventListener('click', function () {
-    asideMenu.classList.toggle('open');
+  fetch('/menu.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('menu-container').innerHTML = html;
+    })
+    .catch(err => console.error('Failed to load menu:', err));
+
+  const toggleBtn = document.getElementById('menu-toggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('menu-open');
   });
 });
