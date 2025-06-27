@@ -407,7 +407,7 @@ footer {
       width: 250px;
     }
 		/* Space between the stickers */
-		td img {
+		.stickersimg td img {
       padding:0px 5px;
 		}
 	
