@@ -48,6 +48,7 @@ body {
 body.dark-mode {
   background: #111;
   background-image: url(../img/bgdarkmode.jpg);
+  background-attachment: fixed;
   color: #eee;
 }
 
@@ -527,6 +528,10 @@ body.dark-mode .affies-banners {
 
 body.dark-mode .scrollbar {
     scrollbar-color: #82194e #5b5b5b;
+}
+
+body.dark-mode img {
+  filter: brightness(0.6);
 }
 
 #bottom-elements {
