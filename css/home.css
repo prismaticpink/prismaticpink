@@ -335,7 +335,7 @@ aside li {
 }
 
 body.dark-mode aside li {
-  background: linear-gradient(180deg, #551958 30%, #5f1624 60%);
+  background: linear-gradient(180deg, #5c2d5f 30%, #8c3f50 60%);
 }
 
 aside li a {
@@ -366,6 +366,10 @@ body.dark-mode aside a:hover {
 
 aside li:hover {
     background: linear-gradient(180deg, #FDDCFF 30%, #99f4d5 60%);
+}
+
+body.dark-mode aside li:hover {
+  background: linear-gradient(180deg, #633a63 30%, #1c4f3f 60%);
 }
 
 #rainbow {
