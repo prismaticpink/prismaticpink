@@ -257,7 +257,7 @@ p {
 }
 
 body.dark-mode img {
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 
 .info-table {
