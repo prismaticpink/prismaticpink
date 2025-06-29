@@ -21,3 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('menu-open');
   });
 });
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show button after scrolling down 100px
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        scrollToTopBtn.classList.add("show");
+      } else {
+        scrollToTopBtn.classList.remove("show");
+      }
+    });
+
+    // Scroll smoothly to top
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
