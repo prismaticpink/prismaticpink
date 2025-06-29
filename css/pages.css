@@ -160,6 +160,8 @@ nav ul {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    display: flex;
+    list-style: none;
 }
 
 nav li {
