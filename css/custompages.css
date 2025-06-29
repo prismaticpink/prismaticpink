@@ -565,7 +565,7 @@ table {
     left: 0;
   }
 
-  #menu-toggle {
+#menu-toggle {
     position: fixed;
     top: 10px;
     left: 10px;
@@ -575,17 +575,38 @@ table {
     border: 1px solid #fff;
     outline: 1px solid #585858;
     color: white;
-    border: none;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
     font-size: 24px;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: left 0.3s ease;
   }
-
-  .menu-open #menu-toggle {
+    .menu-open #menu-toggle {
   left: 250px;
   }
+
+      #scrollToTopBtn {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      z-index: 100;
+      display: none;
+      padding: 12px 16px;
+      background: rgb(245, 180, 193, 0.5);
+      color: white;
+      text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px, #f499d3 5px 5px 5px;
+      border: 1px solid #fff;
+      outline: 1px solid #585858;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    #scrollToTopBtn.show {
+      display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -595,6 +616,10 @@ table {
   }
 
   aside {
+    display: none;
+  }
+
+  #scrollToTopBtn {
     display: none;
   }
 }
