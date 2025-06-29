@@ -155,6 +155,8 @@ nav ul {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    display: flex;
+    list-style: none;
 }
 
 nav li {
@@ -165,7 +167,7 @@ nav li {
 nav {
     width: 1000px;
     height: 20px;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
