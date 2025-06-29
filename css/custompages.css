@@ -619,9 +619,6 @@ table {
     display: none;
   }
 
-  #scrollToTopBtn {
-    display: none;
-  }
 }
 
 @media (max-width: 767px) {
