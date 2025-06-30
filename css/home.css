@@ -15,6 +15,11 @@ a {
   color: #f255fa;
 }
 
+* {
+    scrollbar-color: #f255fa #e6e6e670;
+    scrollbar-width: thin;
+}
+
 body {
     background-color: #f5c6e3;
     background-image: url(../img/bgteste2.jpg);
@@ -26,8 +31,6 @@ body {
     font-size: 0;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    scrollbar-color: #f255fa #e6e6e6;
-    scrollbar-width: thin;
     border-radius: 50px;
     border: 1px solid #fff;
     outline: 1px solid #585858;
@@ -476,7 +479,7 @@ body.dark-mode .home-boxes {
 
 .home-scrollbar {
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-color: #f255fa #e6e6e670;
     scrollbar-width: thin;
     height: 100%;
     box-sizing: border-box;
@@ -489,7 +492,7 @@ body.dark-mode .home-boxes {
 
 body.dark-mode .home-scrollbar {
   color: #cecece;
-  scrollbar-color: #82194e #5b5b5b;
+  scrollbar-color: #82194e #e6e6e670;
 }
 
 .affies-banners {
@@ -523,7 +526,7 @@ body.dark-mode .affies-banners {
     width: 100%;
     low-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-color: #f255fa #e6e6e670;
     scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
@@ -531,7 +534,7 @@ body.dark-mode .affies-banners {
 }
 
 body.dark-mode .scrollbar {
-    scrollbar-color: #82194e #5b5b5b;
+    scrollbar-color: #82194e #e6e6e670;
 }
 
 body.dark-mode img {
