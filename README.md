@@ -11,4 +11,3 @@
 - 🌈 [Website](https://prismatic.pink)
 - 📖 [Blog](https://blog.prismatic.pink)
 - 🎨 [Pixel Site](https://pixels.prismatic.pink)
-- 💌 prismaticpink[at]proton.me
