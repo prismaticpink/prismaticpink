@@ -15,6 +15,11 @@ a {
   color: #f255fa;
 }
 
+* {
+    scrollbar-color: #f255fa #e6e6e670;
+    scrollbar-width: thin;
+}
+
 body {
     background-color: #f5c6e3;
     background-image: url(../img/bgteste2.jpg);
@@ -27,7 +32,7 @@ body {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow-x: hidden;
-    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-color: #f255fa #e6e6e670;
     scrollbar-width: thin;
     border-radius: 50px;
     border: 1px solid #fff;
@@ -387,7 +392,7 @@ section a {
     text-align: center;
     width: 100%;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-color: #f255fa #e6e6e670;
     scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
@@ -395,7 +400,7 @@ section a {
 }
 
 body.dark-mode .contentbox {
-    scrollbar-color: #82194e #5b5b5b;
+    scrollbar-color: #82194e #e6e6e670;
 }
 
 .homeelements {
@@ -406,7 +411,7 @@ body.dark-mode .contentbox {
     text-align: center;
     width: 100%;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e6;
+    scrollbar-color: #f255fa #e6e6e670;
     scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
@@ -414,7 +419,7 @@ body.dark-mode .contentbox {
 }
 
 body.dark-mode .scrollbar {
-    scrollbar-color: #82194e #5b5b5b;
+    scrollbar-color: #82194e #e6e6e670;
 }
 
 #buttons {
