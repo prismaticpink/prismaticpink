@@ -481,6 +481,22 @@ body.dark-mode #upperfooter {
     color: #585858;
 }
 
+.mediarow {
+    display: flex;
+}
+
+.mediacolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.mediacolumn img, .mediarow img {
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+    padding: 5px;
+    margin-top: 8px;
+    vertical-align: middle;
+		}
+
 body.dark-mode .mediaheader {
     text-shadow: #232121 2px 0px, #232121 -2px 0px, #232121 0px 2px, #232121 0px -2px;
     background: linear-gradient( to right, rgba(80, 14, 14, 0.925) 0%, rgba(82, 16, 72, 0.925) 20%, rgba(74, 14, 41, 0.925) 40%, rgba(72, 14, 81, 0.925) 60%, rgba(27, 13, 74, 0.925) 80%, rgba(7, 59, 54, 0.925) 100% );
@@ -510,10 +526,6 @@ body.dark-mode footer {
    background: linear-gradient(180deg, #888d88 30%, #4a7b48 60%);
    color: #cecece;
 }
-
-td img {
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-		}
 
 .zoom:hover {
     transform: scale(1.1);
