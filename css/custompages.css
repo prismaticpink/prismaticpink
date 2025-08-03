@@ -465,6 +465,30 @@ body.dark-mode #upperfooter {
     color: #585858;
 }
 
+.mediaheader {
+    margin: 0 0 1px 0;
+    padding: 0px 0px 0px 5px;
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+    background-color: #bcefe0;
+    background: linear-gradient( to right, rgba(245, 200, 200, 0.925) 0%, rgba(241, 195, 234, 0.925) 20%, rgba(247, 152, 195, 0.925) 40%, rgba(224, 130, 238, 0.925) 60%, rgba(190, 175, 241, 0.925) 80%, rgba(151, 245, 235, 0.925) 100% );
+    border: 1px solid #fff;
+    box-shadow: -1px 0 0 0 #585858, 1px 0 0 0 #585858;
+    color: #585858;
+}
+
+body.dark-mode .mediaheader {
+    text-shadow: #232121 2px 0px, #232121 -2px 0px, #232121 0px 2px, #232121 0px -2px;
+    background: linear-gradient( to right, rgba(80, 14, 14, 0.925) 0%, rgba(82, 16, 72, 0.925) 20%, rgba(74, 14, 41, 0.925) 40%, rgba(72, 14, 81, 0.925) 60%, rgba(27, 13, 74, 0.925) 80%, rgba(7, 59, 54, 0.925) 100% );
+    border: 1px solid #fff;
+    box-shadow: 0 -1px 0 0 #585858, 0 1px 0 0 #585858;
+    color: #f6f6f6;
+}
+
 footer {
     width: 1000px;
     height: 20px;
