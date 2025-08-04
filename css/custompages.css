@@ -481,6 +481,20 @@ body.dark-mode #upperfooter {
     color: #585858;
 }
 
+.mediasubheader {
+    margin: 0 0 1px 0;
+    padding: 0px 0px 0px 5px;
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+    background-color: #bcefe0;
+    border: 1px solid #fff;
+    color: #585858;
+}
+
 .mediabox {
     overflow-x: scroll;
     overflow-y: hidden;
