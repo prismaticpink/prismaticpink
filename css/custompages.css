@@ -516,6 +516,7 @@ body.dark-mode #upperfooter {
 .mediacolumn {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end; 
 }
 
 .mediacolumn img, .mediarow img {
