@@ -509,6 +509,20 @@ body.dark-mode #upperfooter {
     font-family: 'Georgia';
 }
 
+.biggermediabox {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    text-align: left;
+    height: 350px;
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+}
+
 .mediarow {
     display: flex;
 }
