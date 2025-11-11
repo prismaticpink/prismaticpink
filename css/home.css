@@ -469,7 +469,7 @@ body.dark-mode .home-subtitles {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: rgb(245, 180, 193, 0.5);
+    background-color: rgba(174, 157, 251, 0);
 }
 
 body.dark-mode .home-boxes {
@@ -502,8 +502,25 @@ body.dark-mode .home-scrollbar {
     bottom: 151px;
     border: 1px solid #fff, 0px solid #fff, 1px solid #fff, 0px solid #fff;
     outline: 1px solid #585858;
-    background-color: rgb(245, 180, 193, 0.5);
+    background-color: rgba(174, 157, 251, 0);
     flex-shrink: 0;
+}
+
+.text-cliques {
+    width: 600px;
+    height: 200px;
+    border: 1px solid #fff, 0px solid #fff, 1px solid #fff, 0px solid #fff;
+    box-shadow: 0 -1px 0 0 #585858, -1px 0 0 0 #585858, 1px 0 0 0 #585858; 
+    text-align: center;
+    background-color: rgba(174, 157, 251, 0);
+    color: #585858;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-family: 'Georgia';
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+    overflow-y: scroll;
 }
 
 body.dark-mode .affies-banners {
