@@ -290,6 +290,18 @@ ol {
     text-align: justify;
 }
 
+dt {
+    color: #7b7ad6;
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+    text-align: left;
+    font-weight: bold;
+}
+
+dd {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
 .no-button {
     font-family: 'Sour Gummy', sans-serif;
     font-weight: 600;
