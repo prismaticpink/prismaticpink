@@ -434,6 +434,59 @@ section a {
 
 }
 
+.top-elements {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+    box-shadow:
+    0 -1px 0 0 #585858,
+    -1px 0 0 0 #585858,
+    1px 0 0 0 #585858;
+
+}
+
+.text-cliques-box {
+    margin:0;
+    height: 100%;
+    width: 200px;
+    border: 1px solid #fff;
+    position: relative;
+    flex: 80%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(174, 157, 251, 0);
+}
+
+.network-box {
+    margin:0;
+    height: 100%;
+    width: 100px;
+    border: 1px solid #fff;
+    position: relative;
+    flex: 20%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(174, 157, 251, 0);
+}
+
+.top-scrollbar {
+    overflow-y: scroll;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+    color: #585858;
+    padding: 10px;
+    text-align: center;
+}
+
 .home-subtitles {
     margin: 0 0 1px 0;
     padding: 0px 0px 0px 5px;
@@ -446,7 +499,7 @@ section a {
     background-color: #bcefe0;
     background: linear-gradient( to right, rgba(245, 200, 200, 0.925) 0%, rgba(241, 195, 234, 0.925) 20%, rgba(247, 152, 195, 0.925) 40%, rgba(224, 130, 238, 0.925) 60%, rgba(190, 175, 241, 0.925) 80%, rgba(151, 245, 235, 0.925) 100% );
     border: 1px solid #fff;
-    box-shadow: 1px -1px 0 0 #585858, -1px 1px 0 0 #585858;
+    outline: 1px solid #585858;
     
 }
 
@@ -530,6 +583,7 @@ body.dark-mode .affies-banners {
     display: inline-block;
     white-space: nowrap;
     animation: scroll 15s linear infinite;
+    margin-top: 1px;
 }
 
 .affies-banners:hover .affies-scrolling {
@@ -539,10 +593,7 @@ body.dark-mode .affies-banners {
 .scrollbar {
     text-align: center;
     width: 100%;
-    low-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e670;
-    scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Georgia';
@@ -918,6 +969,21 @@ body.dark-mode footer {
     width: 100%;
     }
 
+    .top-elements {
+      height: 100%;
+    }
+
+    .text-cliques-box {
+      flex: 1;
+      height: 100%;
+    }
+
+    .network-box {
+      flex: 1;
+      height: 100%;
+    }
+    }
+
     #lowernav {
     width: 100%;
     max-width: 100vw;
@@ -958,5 +1024,3 @@ body.dark-mode footer {
     order: 8;
     }
     
-
-}
