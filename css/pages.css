@@ -249,6 +249,20 @@ aside h2 {
     color: #585858;
 }
 
+aside h3 {
+  margin: 0 0 1px 0;
+  padding: 0px 0px 0px 5px;
+  font-family: 'Sour Gummy', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+  background-color: #bcefe0;
+  border: 1px solid #fff;
+  color: #585858;
+}
+
 body.dark-mode aside h2 {
     text-shadow: #232121 2px 0px, #232121 -2px 0px, #232121 0px 2px, #232121 0px -2px;
     background: linear-gradient( to right, rgba(80, 14, 14, 0.925) 0%, rgba(82, 16, 72, 0.925) 20%, rgba(74, 14, 41, 0.925) 40%, rgba(72, 14, 81, 0.925) 60%, rgba(27, 13, 74, 0.925) 80%, rgba(7, 59, 54, 0.925) 100% );
@@ -465,10 +479,7 @@ section a {
     outline: 1px solid #585858;
     text-align: center;
     width: 100%;
-    low-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e670;
-    scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Georgia';
@@ -485,10 +496,7 @@ body.dark-mode .contentbox {
 .scrollbar {
     text-align: center;
     width: 100%;
-    low-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: #f255fa #e6e6e670;
-    scrollbar-width: thin;
     font-size: 14px;
     letter-spacing: 1px;
     font-family: 'Georgia';
