@@ -37,6 +37,10 @@ body {
     background-color: #f5c6e3;
     background-image: url(../img/bgteste2.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
