@@ -20,6 +20,19 @@ a {
     scrollbar-width: thin;
 }
 
+p, li, dt, dd, dl {
+  line-height: 1.5;
+}
+
+section p, section li, section dt, section dd, section dl {
+  line-height: 1.5;
+  text-shadow: #fff 1px 0px, #fff 0px 1px;
+}
+
+body.dark-mode p, li, dt, dd, dl {
+  text-shadow: none;
+}
+
 body {
     background-color: #f5c6e3;
     background-image: url(../img/bgteste2.jpg);
@@ -159,6 +172,7 @@ body.dark-mode a:hover {
 
 nav a {
     color: #fff;
+    text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px;
     text-decoration: none;
 }
 
@@ -444,7 +458,13 @@ section a {
     0 -1px 0 0 #585858,
     -1px 0 0 0 #585858,
     1px 0 0 0 #585858;
+    text-shadow: #fff 1px 0px, #fff 0px 1px;
 
+}
+
+body.dark-mode .top-elements {
+  color: #cecece;
+  text-shadow: none;
 }
 
 .text-cliques-box {
