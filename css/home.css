@@ -725,6 +725,11 @@ body.dark-mode #upperfooter {
   height: 31px;
 }
 
+.off-platform-webring a {
+  color: #5ba5ad;
+  text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+}
+
 footer {
     width: 1000px;
     height: 20px;
