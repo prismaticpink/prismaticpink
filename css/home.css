@@ -730,6 +730,17 @@ body.dark-mode #upperfooter {
   text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
 }
 
+.irish-interest-webring {
+  margin: 0;
+  text-align: center;
+}
+
+.irish-interest-webring a {
+  text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+  font-weight: 900;
+  color: #585858;
+}
+
 footer {
     width: 1000px;
     height: 20px;
