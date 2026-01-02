@@ -154,7 +154,7 @@ body.dark-mode h3 {
     color: #5f5f5f;
 }
 
-strong {
+b, strong {
     color: #d67ab4;
     text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
 }
@@ -162,6 +162,36 @@ strong {
 body.dark-mode strong {
     text-shadow: #cecece 1px 0px, #cecece -1px 0px, #cecece 0px 1px, #cecece 0px -1px;
     color: #67204d;
+}
+
+i,
+em {
+	color: #898989;
+}
+
+body.dark-mode i,
+em {
+	color: #b2b2b2;
+}
+
+s {
+  color: #898989;
+}
+
+.strike {
+  position: relative;
+  color: #898989;
+}
+
+.strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: rgb(230, 135, 182); /* stroke color */
+  transform: translateY(-50%);
 }
 
 a:hover {
