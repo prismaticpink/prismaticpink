@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Site Name</title>
+        <!-- Change this URL to replace the blue flower with your favicon -->
+        <link rel="icon" type="image/x-icon" href="https://i.ibb.co/8DL1L17M/favicon-blue.gif">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+body {
+    background-color: #b1b5d3;
+    background-image: url('https://i.ibb.co/hFscZc4F/background.png');
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: #454545;
+    font-size: 0.8em;
+}
+
+* {
+    scrollbar-color: #9a91db #e6e6e600;
+    scrollbar-width: thin;
+}
+
+#site {
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: center;
+    margin: 0.1em;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 2px 2px #bb7dbe;
+    font-family: 'Oooh Baby', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border: 1px dashed #fff;
+    background-color: #7d85be;
+    color: white;
+    margin: 0.1em;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #e7abe1;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: block;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    border: 1px dashed #fff;
+    margin: 0.1em;
+    padding: 0.5em;
+    background-color: #ffffffa2;
+}
+
+aside ul {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+aside li {
+    background-color: #7d85be;
+    margin-bottom: 2px;
+}
+
+aside li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+aside a:hover {
+    background-color: #e7abe1;
+}
+
+aside h2 {
+    background-color: #ad98d8;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: 1px 1px #454545;
+    font-size: 1em;
+    border-bottom: #f2bfe8 3px solid;
+}
+
+#link-me {
+    text-align: center;
+}
+
+section {
+    width: 70%;
+    border: 1px dashed #fff;
+    margin: 0.1em;
+    padding: 0.5em;
+    background-color: #ffffffa2;
+}
+
+h2 {
+    background-color: #ad98d8;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    font-size: 1em;
+    border-bottom: #f2bfe8 3px solid;
+}
+
+h3 {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #808080;
+    border-bottom: 2px dotted #e7abe1;
+}
+
+.left-picture {
+    float: left;
+    margin: 0.6em 0.6em 0 0;
+}
+
+.right-picture {
+    float: right;
+    margin: 0.6em 0 0 0.6em;
+}
+
+p {
+    text-align: justify;
+}
+
+b, strong {
+    color: #3866d8;
+    font-weight: 900;
+}
+
+i, em {
+    color: #939393;
+}
+
+s {
+    color: #47a6b5;
+}
+
+a {
+    color: #cb7dc4;
+    text-decoration: underline 2px dotted;
+}
+
+a:hover {
+    color: #7a7eed;
+}
+
+ul {
+    list-style-type: "♡ ";
+    text-align: justify;
+    padding: 0 0 0 20px;
+}
+
+#home-elements {
+    display: flex;
+    width: 100%;
+}
+
+#updates {
+    width: 50%;
+    margin: 0;
+}
+
+#to-do {
+    width: 50%;
+    margin: 0;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+textarea {
+    border: 2px dotted #858585;
+    background-color: #d3c0e09f;
+}
+
+footer {
+    border: 1px dashed #fff;
+    background-color: #7d85be;
+    margin: 0.1em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer strong, footer a {
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    body {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    #site {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+  }
+  
+  nav ul li {
+    width: 90%;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  aside {
+    width: 100%;
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section {
+    width: 100%;
+    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+ 
+}
+        </style>
+    </head>
+    <body>
+        <div id="site">
+        <header>
+            <h1>Your Site Name</h1>
+        </header>
+        <!-- You can remove the nav tag if you want to get rid of this menu and just keep the sidebar. -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#">Link 1</a></li>
+                <li><a href="index.html#">Link 2</a></li>
+                <li><a href="index.html#">Link 3</a></li>
+                <li><a href="index.html#">Link 4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <h2>About Me</h2>
+                <div id="about-me">
+                    <!-- You can replace this image and change the direction using the classes "left-picture" or "right-picture" -->
+                    <img src="https://i.ibb.co/pv4kSm47/bear.gif" alt="Profile Picture" class="left-picture">
+                    <p>Hello, my name is <strong>John Doe</strong> and this is my awesome website. This is just a brief introduction. I like <em>making websites, writing</em>, etc.</p>
+                </div>
+                <h2>Menu</h2>
+                <div id="menu">
+                    <!-- This could be your menu, or maybe your affies links, you choose! -->
+                    <ul>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                        <li><a href="#">Your Link Here</a></li>
+                    </ul>
+                </div>
+                <h2>Scroll box</h2>
+                <!-- You can adjust the height and also remove the scroll class if you want! -->
+                <div class="scroll" style="height: 100px;">
+                    <p>This is a scroll box. You can include cliques, webrings, buttons, anything you want here. You can even copy and paste its code to create multiple scroll boxes.</p>
+                </div>
+                <h2>Link Me</h2>
+                <div id="link-me">
+                    <!-- Replace this with your 88x31 button -->
+                    <img src="https://placehold.co/88x31" alt="My button">
+                    <!-- Replace the code in textarea with your site URL and the button URL. I recommend uploading it on https://imgbb.com/ so people won't steal your bandwidth. -->
+                    <textarea>
+                        <a href="https://yoursite.com/" target="_blank"><img src="https://placehold.co/88x31" alt="My button"></a>
+                    </textarea>
+                </div>
+            </aside>
+            <section>
+                <h2>Welcome</h2>
+                <!-- You can replace this image and change the direction using the classes "left-picture" or "right-picture" -->
+                <img src="https://i.ibb.co/DDJcs7g1/hellokitty-blue.gif" class="right-picture">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- h2 is a header, you can include as many as you want -->
+                <h2>Layout Details</h2>
+                <p>This is a paragraph. This text is <strong>bold</strong>. This text is <em>italic</em>. This text is <s>striked</s>. This is a <a href="index.html">link</a>.</p>
+                <!-- h3 is a subheader, you can include as many as you want -->
+                <h3>Description</h3>
+                <p>This is a responsive two-column layout heavily inspired by late 2000s/early 2010s blog aesthetics.</p>
+                <h2>Rules</h2>
+                <ul>
+                    <li>You <strong>must credit</strong> <a href="https://prismatic.pink/" target="_blank">Prismatic Pink</a> with a link somewhere. I have included it on the footer, you can remove if you want, but then you must include it on a Credits page, the sidebar, or somewhere else <em>visible</em>.</li>
+                    <li>You can change the colours, images, fonts, etc as you wish, feel free to play with the code, but please do not remove the credits.</li>
+                    <li>Please don't use it for commercial purposes. If you happen to sell commissions or have a ko-fi page on your website, that's fine <i>if the majority of your website content is non-commercial</i>.</li>
+                </ul>
+                <h2>Code</h2>
+                <textarea style="width: 98%; height: 100px;">
+                   &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Your Site Name&lt;/title&gt;
+        &lt;!-- Change this URL to replace the blue flower with your favicon --&gt;
+        &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://i.ibb.co/8DL1L17M/favicon-blue.gif&quot;&gt;
+        &lt;style&gt;
+            @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&amp;display=swap');
+
+body {
+    background-color: #b1b5d3;
+    background-image: url('https://i.ibb.co/hFscZc4F/background.png');
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    color: #454545;
+    font-size: 0.8em;
+}
+
+* {
+    scrollbar-color: #9a91db #e6e6e600;
+    scrollbar-width: thin;
+}
+
+#site {
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    text-align: center;
+    margin: 0.1em;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 2px 2px #bb7dbe;
+    font-family: 'Oooh Baby', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border: 1px dashed #fff;
+    background-color: #7d85be;
+    color: white;
+    margin: 0.1em;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #e7abe1;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: block;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    border: 1px dashed #fff;
+    margin: 0.1em;
+    padding: 0.5em;
+    background-color: #ffffffa2;
+}
+
+aside ul {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+aside li {
+    background-color: #7d85be;
+    margin-bottom: 2px;
+}
+
+aside li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+aside a:hover {
+    background-color: #e7abe1;
+}
+
+aside h2 {
+    background-color: #ad98d8;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: 1px 1px #454545;
+    font-size: 1em;
+    border-bottom: #f2bfe8 3px solid;
+}
+
+#link-me {
+    text-align: center;
+}
+
+section {
+    width: 70%;
+    border: 1px dashed #fff;
+    margin: 0.1em;
+    padding: 0.5em;
+    background-color: #ffffffa2;
+}
+
+h2 {
+    background-color: #ad98d8;
+    text-transform: lowercase;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    font-size: 1em;
+    border-bottom: #f2bfe8 3px solid;
+}
+
+h3 {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #808080;
+    border-bottom: 2px dotted #e7abe1;
+}
+
+.left-picture {
+    float: left;
+    margin: 0.6em 0.6em 0 0;
+}
+
+.right-picture {
+    float: right;
+    margin: 0.6em 0 0 0.6em;
+}
+
+p {
+    text-align: justify;
+}
+
+b, strong {
+    color: #3866d8;
+    font-weight: 900;
+}
+
+i, em {
+    color: #939393;
+}
+
+s {
+    color: #47a6b5;
+}
+
+a {
+    color: #cb7dc4;
+    text-decoration: underline 2px dotted;
+}
+
+a:hover {
+    color: #7a7eed;
+}
+
+ul {
+    list-style-type: &quot;♡ &quot;;
+    text-align: justify;
+    padding: 0 0 0 20px;
+}
+
+#home-elements {
+    display: flex;
+    width: 100%;
+}
+
+#updates {
+    width: 50%;
+    margin: 0;
+}
+
+#to-do {
+    width: 50%;
+    margin: 0;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+textarea {
+    border: 2px dotted #858585;
+    background-color: #d3c0e09f;
+}
+
+footer {
+    border: 1px dashed #fff;
+    background-color: #7d85be;
+    margin: 0.1em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer strong, footer a {
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    body {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    #site {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+  }
+  
+  nav ul li {
+    width: 90%;
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  aside {
+    width: 100%;
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section {
+    width: 100%;
+    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+ 
+}
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;site&quot;&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Your Site Name&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;!-- You can remove the nav tag if you want to get rid of this menu and just keep the sidebar. --&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;index.html#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;main&gt;
+            &lt;aside&gt;
+                &lt;h2&gt;About Me&lt;/h2&gt;
+                &lt;div id=&quot;about-me&quot;&gt;
+                    &lt;!-- You can replace this image and change the direction using the classes &quot;left-picture&quot; or &quot;right-picture&quot; --&gt;
+                    &lt;img src=&quot;https://i.ibb.co/pv4kSm47/bear.gif&quot; alt=&quot;Profile Picture&quot; class=&quot;left-picture&quot;&gt;
+                    &lt;p&gt;Hello, my name is &lt;strong&gt;John Doe&lt;/strong&gt; and this is my awesome website. This is just a brief introduction. I like &lt;em&gt;making websites, writing&lt;/em&gt;, etc.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;h2&gt;Menu&lt;/h2&gt;
+                &lt;div id=&quot;menu&quot;&gt;
+                    &lt;!-- This could be your menu, or maybe your affies links, you choose! --&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Your Link Here&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;h2&gt;Scroll box&lt;/h2&gt;
+                &lt;!-- You can adjust the height and also remove the scroll class if you want! --&gt;
+                &lt;div class=&quot;scroll&quot; style=&quot;height: 100px;&quot;&gt;
+                    &lt;p&gt;This is a scroll box. You can include cliques, webrings, buttons, anything you want here. You can even copy and paste its code to create multiple scroll boxes.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;h2&gt;Link Me&lt;/h2&gt;
+                &lt;div id=&quot;link-me&quot;&gt;
+                    &lt;!-- Replace this with your 88x31 button --&gt;
+                    &lt;img src=&quot;https://placehold.co/88x31&quot; alt=&quot;My button&quot;&gt;
+                    &lt;!-- Replace the code in textarea with your site URL and the button URL. I recommend uploading it on https://imgbb.com/ so people won't steal your bandwidth. --&gt;
+                    &lt;textarea&gt;
+                        &lt;a href=&quot;https://yoursite.com/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://placehold.co/88x31&quot; alt=&quot;My button&quot;&gt;&lt;/a&gt;
+                    &lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/aside&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Welcome&lt;/h2&gt;
+                &lt;!-- You can replace this image and change the direction using the classes &quot;left-picture&quot; or &quot;right-picture&quot; --&gt;
+                &lt;img src=&quot;https://i.ibb.co/DDJcs7g1/hellokitty-blue.gif&quot; class=&quot;right-picture&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+                &lt;!-- h2 is a header, you can include as many as you want --&gt;
+                &lt;h2&gt;Layout Details&lt;/h2&gt;
+                &lt;p&gt;This is a paragraph. This text is &lt;strong&gt;bold&lt;/strong&gt;. This text is &lt;em&gt;italic&lt;/em&gt;. This text is &lt;s&gt;striked&lt;/s&gt;. This is a &lt;a href=&quot;index.html&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+                &lt;!-- h3 is a subheader, you can include as many as you want --&gt;
+                &lt;h3&gt;Description&lt;/h3&gt;
+                &lt;p&gt;This is a responsive two-column layout heavily inspired by late 2000s/early 2010s blog aesthetics.&lt;/p&gt;
+                &lt;h2&gt;Rules&lt;/h2&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;You &lt;strong&gt;must credit&lt;/strong&gt; &lt;a href=&quot;https://prismatic.pink/&quot; target=&quot;_blank&quot;&gt;Prismatic Pink&lt;/a&gt; with a link somewhere. I have included it on the footer, you can remove if you want, but then you must include it on a Credits page, the sidebar, or somewhere else &lt;em&gt;visible&lt;/em&gt;.&lt;/li&gt;
+                    &lt;li&gt;You can change the colours, images, fonts, etc as you wish, feel free to play with the code, but please do not remove the credits.&lt;/li&gt;
+                    &lt;li&gt;Please don't use it for commercial purposes. If you happen to sell commissions or have a ko-fi page on your website, that's fine &lt;i&gt;if the majority of your website content is non-commercial&lt;/i&gt;.&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;div id=&quot;home-elements&quot;&gt;
+                    &lt;div id=&quot;updates&quot;&gt;
+                        &lt;h2&gt;Updates&lt;/h2&gt;
+                        &lt;!-- This is an Updates section. You can remove it and replace with something else. You can adjust the height and also remove the class &quot;scroll&quot; if you want. Just remember it needs to be the same height as the to-do list. --&gt;
+                        &lt;div class=&quot;scroll&quot; style=&quot;height: 150px;&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;
+                                &lt;!-- You can remove the details and summary tags if you don't want the updates to open and close. --&gt;
+                                &lt;details open&gt;
+                                    &lt;summary&gt;&lt;strong&gt;20/01/2026&lt;/strong&gt;&lt;/summary&gt;
+                                    This is a brief description of my update. You can open and close it.
+                                &lt;/details&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;details&gt;
+                                    &lt;summary&gt;&lt;strong&gt;20/01/2026&lt;/strong&gt;&lt;/summary&gt;
+                                    This is a brief description of my update. You can open and close it.
+                                &lt;/details&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;details&gt;
+                                    &lt;summary&gt;&lt;strong&gt;20/01/2026&lt;/strong&gt;&lt;/summary&gt;
+                                    This is a brief description of my update. You can open and close it.
+                                &lt;/details&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;details&gt;
+                                    &lt;summary&gt;&lt;strong&gt;20/01/2026&lt;/strong&gt;&lt;/summary&gt;
+                                    This is a brief description of my update. You can open and close it.
+                                &lt;/details&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;details&gt;
+                                    &lt;summary&gt;&lt;strong&gt;20/01/2026&lt;/strong&gt;&lt;/summary&gt;
+                                    This is a brief description of my update. You can open and close it.
+                                &lt;/details&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;to-do&quot;&gt;
+                        &lt;h2&gt;To-do&lt;/h2&gt;
+                        &lt;!-- This is a to-do list. You can remove it and replace with something else. You can adjust the height and also remove the class &quot;scroll&quot; if you want. --&gt;
+                        &lt;div class=&quot;scroll&quot; style=&quot;height: 150px;&quot;&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Include pictures&lt;/li&gt;
+                            &lt;li&gt;Write about me&lt;/li&gt;
+                            &lt;li&gt;Links page&lt;/li&gt;
+                            &lt;li&gt;Another page&lt;/li&gt;
+                            &lt;li&gt;Another page&lt;/li&gt;
+                            &lt;li&gt;Another page&lt;/li&gt;
+                            &lt;li&gt;Another page&lt;/li&gt;
+                            &lt;li&gt;&lt;s&gt;Get a new layout&lt;/s&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;s&gt;Get a site host&lt;/s&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;!-- If you remove the credits here, you must include them somewhere else! --&gt;
+            Copyright &amp;copy; 2026 &lt;strong&gt;Your Name&lt;/strong&gt; | Layout by &lt;a href=&quot;https://prismatic.pink/&quot; target=&quot;_blank&quot;&gt;Prismatic Pink&lt;/a&gt;
+        &lt;/footer&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+                <div id="home-elements">
+                    <div id="updates">
+                        <h2>Updates</h2>
+                        <!-- This is an Updates section. You can remove it and replace with something else. You can adjust the height and also remove the class "scroll" if you want. Just remember it needs to be the same height as the to-do list. -->
+                        <div class="scroll" style="height: 150px;">
+                        <ul>
+                            <li>
+                                <!-- You can remove the details and summary tags if you don't want the updates to open and close. -->
+                                <details open>
+                                    <summary><strong>20/01/2026</strong></summary>
+                                    This is a brief description of my update. You can open and close it.
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><strong>20/01/2026</strong></summary>
+                                    This is a brief description of my update. You can open and close it.
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><strong>20/01/2026</strong></summary>
+                                    This is a brief description of my update. You can open and close it.
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><strong>20/01/2026</strong></summary>
+                                    This is a brief description of my update. You can open and close it.
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><strong>20/01/2026</strong></summary>
+                                    This is a brief description of my update. You can open and close it.
+                                </details>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div id="to-do">
+                        <h2>To-do</h2>
+                        <!-- This is a to-do list. You can remove it and replace with something else. You can adjust the height and also remove the class "scroll" if you want. -->
+                        <div class="scroll" style="height: 150px;">
+                        <ul>
+                            <li>Include pictures</li>
+                            <li>Write about me</li>
+                            <li>Links page</li>
+                            <li>Another page</li>
+                            <li>Another page</li>
+                            <li>Another page</li>
+                            <li>Another page</li>
+                            <li><s>Get a new layout</s></li>
+                            <li><s>Get a site host</s></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- If you remove the credits here, you must include them somewhere else! -->
+            Copyright &copy; 2026 <strong>Your Name</strong> | Layout by <a href="https://prismatic.pink/" target="_blank">Prismatic Pink</a>
+        </footer>
+        </div>
+    </body>
+</html>
