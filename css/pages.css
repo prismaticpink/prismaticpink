@@ -552,6 +552,12 @@ body.dark-mode .scrollbar {
     scrollbar-color: #82194e #e6e6e670;
 }
 
+.layout-preview {
+  padding: 4px;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+}
+
 #bottom-elements {
     border-radius: 0 0 50px 50px;
     margin: 1px 0px 0px 0px;
