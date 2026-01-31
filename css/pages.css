@@ -558,6 +558,26 @@ body.dark-mode .scrollbar {
   outline: 1px solid #585858;
 }
 
+s {
+  color: #898989;
+}
+
+.strike {
+  position: relative;
+  color: #898989;
+}
+
+.strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: rgb(230, 135, 182); /* stroke color */
+  transform: translateY(-50%);
+}
+
 #bottom-elements {
     border-radius: 0 0 50px 50px;
     margin: 1px 0px 0px 0px;
