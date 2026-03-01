@@ -566,6 +566,25 @@ body.dark-mode .scrollbar {
     color: #585858;
 }
 
+.masonry {
+  column-count: 3;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.masonry img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+}
+
+.layout-preview {
+  padding: 4px;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+}
+
 #bottom-elements {
     border-radius: 0 0 50px 50px;
     margin: 1px 0px 0px 0px;
@@ -972,4 +991,14 @@ table {
     order: 8;
     }
 
+}
+
+@media (max-width: 1200px) {
+  .masonry { column-count: 3; }
+}
+@media (max-width: 800px) {
+  .masonry { column-count: 2; }
+}
+@media (max-width: 500px) {
+  .masonry { column-count: 1; }
 }
