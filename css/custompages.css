@@ -286,6 +286,29 @@ ol {
     text-align: justify;
 }
 
+.list-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.list-table th {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    background-color: #d583b3a7;
+    color: #fff;
+    padding: 0;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.list-table td {
+    border: 1px solid #fff;
+    outline: 1px solid #585858;
+    padding: 5px;
+}
+
 aside {
     width: 200px;
     height: inherit;
