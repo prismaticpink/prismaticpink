@@ -301,6 +301,7 @@ ol {
     padding: 0;
     text-transform: lowercase;
     text-align: center;
+    text-shadow: none;
 }
 
 .list-table td {
