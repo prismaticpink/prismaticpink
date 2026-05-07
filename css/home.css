@@ -668,7 +668,7 @@ body.dark-mode img {
 
 #buttons {
     width: 1000px;
-    height: 31px;
+    height: 20px;
     text-align: center;
     text-transform: lowercase;
     background: linear-gradient(180deg, #FFF 30%, #d8b3fa 60%);
