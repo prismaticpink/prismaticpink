@@ -395,14 +395,8 @@ aside li a {
   height: 100%; 
   padding: 0; 
   color: #fff;
-  text-shadow: #585858 2px 1px 1px;
+  text-shadow: #585858 1px 0px, #585858 -1px 0px, #585858 0px 1px, #585858 0px -1px;
   text-decoration: none;
-}
-
-aside a {
-    color: #fff;
-    text-shadow: #585858 2px 1px 1px;
-    text-decoration: none;
 }
 
 aside a:hover {
