@@ -286,6 +286,18 @@ ol {
     text-align: justify;
 }
 
+dt {
+    color: #7b7ad6;
+    text-shadow: #fff 1px 0px, #fff -1px 0px, #fff 0px 1px, #fff 0px -1px;
+    text-align: left;
+    font-weight: bold;
+}
+
+dd {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
 .list-table {
     border-collapse: separate;
     border-spacing: 5px;
@@ -474,6 +486,24 @@ body.dark-mode .contentbox {
 
 .item:hover .hover-text {
   opacity: 1;
+}
+
+.description {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(245, 180, 193, 0.647);
+  color: #585858;
+  text-shadow: #fff 1px 0px, #fff 0px 1px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+  transform: translate(12px, 12px);
 }
 
 .open-popup {
