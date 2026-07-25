@@ -332,6 +332,57 @@ dd {
     margin-bottom: 1em;
 }
 
+.filter-menu {
+      margin-bottom: 1em;
+    }
+
+.filter-menu button {
+      margin: 4px;
+      border-radius: 5px;
+      padding: 6px 10px;
+      font-family: 'Sour Gummy', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+      text-shadow: #fff 2px 0px, #fff -2px 0px, #fff 0px 2px, #fff 0px -2px;
+      background: rgba(245, 180, 193, 0.647);
+      cursor: pointer;
+      border: 1px solid #fff;
+      outline: 1px solid #585858;
+    }
+
+.filter-menu button.active {
+      background: rgba(180, 245, 237, 0.647);
+    }
+
+.hidden {
+    display: none !important;
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px;
+}
+
+.button-item {
+      display: inline-block;
+    }
+
+.button-grid a img {
+  width: 88px;
+  height: 31px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-grid a img:hover {
+  transform: scale(1.10);
+}
+
 .no-button {
     font-family: 'Sour Gummy', sans-serif;
     font-weight: 600;
@@ -359,6 +410,24 @@ dd {
   background: rgba(245, 180, 193, 0.647);
   color: #585858;
   text-shadow: #fff 1px 0px, #fff 0px 1px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+  transform: translate(12px, 12px);
+}
+
+.description-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.647);
+  max-width: 250px;
+  color: #ffffff;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 12px;
@@ -885,7 +954,7 @@ body.dark-mode footer {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 250px;
+    width: 100%;
     height: 100%;
     background: rgb(245, 180, 193, 0.5);
     border: 1px solid #fff;
@@ -1015,6 +1084,11 @@ body.dark-mode footer {
 
   .cliques {
     order: 4;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  aside {
     width: 100%;
     max-width: 100vw;
   }
