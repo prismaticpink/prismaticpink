@@ -322,6 +322,41 @@ p {
     text-align: justify;
 }
 
+.hover-text {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.491);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+}
+
+.description {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(245, 180, 193, 0.647);
+  color: #585858;
+  text-shadow: #fff 1px 0px, #fff 0px 1px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  border: 1px solid #fff;
+  outline: 1px solid #585858;
+  transform: translate(12px, 12px);
+}
+
 .info-table {
   border-collapse: separate;
   border-spacing: 5px;
